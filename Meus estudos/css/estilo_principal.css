@@ -1,0 +1,26 @@
+/*Estilo principal da página para clicar e ganhar o seu kitgay*/
+body{
+    opacity: 20;
+    background-color: #ff000059;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{ 
+    width: 2px;
+    height: 2px;
+}
+
+section#M01{
+    border: 1px solid black;
+    height: 684px;
+    width: 684px;
+    margin-left: 295px;
+}
+button{
+    cursor: pointer;
+    background-color: gold;
+    font-size: 18px;
+}

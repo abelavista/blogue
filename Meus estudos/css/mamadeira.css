@@ -1,0 +1,124 @@
+/*Keyframe da Mamadeira de piroca e dos páragrafos*/
+body{
+    opacity: 20;
+    background-color: #ff000059;
+}
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{ 
+    width: 2px;
+    height: 2px;
+}
+
+section#M01{
+    border: 1px solid black;
+    height: 684px;
+    width: 684px;
+   margin-left: 295px;
+   
+}
+
+#mama01{
+    animation: mama01;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    height: 400px;
+    position: relative;
+    margin-left: -100px;
+    left: 300px;
+    bottom: 137px;
+    /* /* transform: rotate(325deg)translateX(366px); * */
+    
+}
+
+p{
+    animation: kit_gay;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    position: relative;
+    top: 251px;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+}
+/*animação do páragrafo*/
+@keyframes kit_gay{
+    0%{
+        opacity: 1;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        transform: scale(10);
+    }
+    100%{
+        opacity: 12;
+        animation-timing-function: ease-out;
+        animation-delay: 2s;
+        animation-delay: 2s;
+        transform: scale(15);
+    }
+}
+/*animação da mamadeira de piroca*/
+@keyframes mama01{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+        transform: rotate(45deg) translate(100px);
+    }
+    30%{
+        opacity: 1;
+        transform: rotate(-45deg) translate(-100px);
+    }
+    32%{
+        opacity: 1;
+        transform: scale(0.8) rotate(-90deg);
+    }
+    45%{
+        opacity: 1;
+        top: 200px;
+        transform: scale(2) rotate(90deg);
+        animation-timing-function: ease-in-out;
+    }
+    50%{
+        opacity: 1;
+        top: 210px;
+        left: 210px;
+        transform: scale(1.2) rotate(-90deg);
+    }
+    75%{
+        opacity: 1;
+        left: 214px;
+        animation-fill-mode: ease ;
+        transform: rotateZ(30deg);
+      
+    }
+    80%{
+        opacity: 1;
+        right: 100px;
+        animation-delay: 3s;
+        /* animation-fill-mode: backwards; */
+        transform: translateY(150px) rotate(-45deg);
+    }
+    90%{
+        opacity: 1;
+        transform: scale(2) rotate(-60deg) translate(120px);
+    }
+    100%{
+        opacity: 1;
+        animation-delay: 4s;
+        animation-timing-function: ease-out;
+        transform: scale(4);
+    }
+
+}
